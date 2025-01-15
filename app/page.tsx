@@ -1,8 +1,9 @@
 import Image from "next/image";
+import RandomNumberComponent from "./ui/number";
 
 export default function Home() {
   return (
-    <div className="bg-[#e0effe] h-screen w-screen pt-12 pt-safe-top">
+    <div className="bg-[#E0F0FD] h-screen w-screen pt-12 pt-safe-top max-w-lg">
       <Image
         className="w-full"
         src="/banner.png"
@@ -11,13 +12,14 @@ export default function Home() {
         height={0}
         sizes="100vw"
       />
-      <div className="w-screen h-[40px] fixed top-0 pt-safe-top left-0">
+      <div className="w-screen h-[40px] max-w-lg fixed top-0 pt-safe-top left-0">
         <Image className="" src="/header.png" alt="" sizes="100vw" fill />
       </div>
 
       <div className="flex justify-between items-center p-4 text-sm">
         <div className="text-gray-900 font-semibold">
-          136****2314 <span className="font-normal">胡*</span>
+          136****
+          <RandomNumberComponent /> <span className="font-normal">胡*</span>
         </div>
         <div className="text-gray-900 bg-white px-2 rounded-xl">
           关怀版 &gt;
@@ -84,7 +86,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="w-screen h-[70px] fixed bottom-0 left-0">
+      <div className="w-screen max-w-lg h-[70px] fixed bottom-0 left-0">
         <Image src="/footer.png" alt="" sizes="100vw" fill />
       </div>
     </div>
