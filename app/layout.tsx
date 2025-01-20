@@ -32,7 +32,7 @@ export default function RootLayout({
           content="black-translucent"
         />
         <meta name="msapplication-TileColor" content="#E0F0FD" />
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#E0F0FD" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
