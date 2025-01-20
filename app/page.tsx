@@ -30,59 +30,63 @@ export default function Home() {
       </div>
       <div className="bg-[#fefefe] rounded-xl py-5">
         <div className="relative px-5 overflow-hidden">
-          <ul className="flex">
-            <li className="w-[60px] h-[60px] border rounded-lg flex items-center justify-center border-transparent">
-              <div className="text-black font-semibold text-lg text-center">
-                1月<div className="text-gray-500 text-xs">2025</div>
+          <ul className="flex w-[450px]">
+            <li className="w-[47px] h-[47px] border rounded-lg flex items-center justify-center border-transparent">
+              <div className="text-black font-semibold text-base text-center">
+                1月<div className="text-gray-500 text-xs font-normal">2025</div>
               </div>
             </li>
-            <li className="w-[60px] h-[60px] border rounded-lg flex items-center justify-center border-[#2B94FB]">
-              <div className="text-black font-semibold text-lg text-center">
+            <li className="w-[47px] h-[47px] border rounded-lg flex items-center justify-center border-[#2B94FB]">
+              <div className="text-black font-semibold text-base text-center">
                 12月
-                <div className="text-gray-500 text-xs">2024</div>
+                <div className="text-gray-500 text-xs font-normal">2024</div>
               </div>
             </li>
-            <li className="w-[60px] h-[60px] border rounded-lg flex items-center justify-center border-transparent">
-              <div className="text-black font-semibold text-lg text-center">
-                11月<div className="text-gray-500 text-xs">2024</div>
+            <li className="w-[47px] h-[47px] border rounded-lg flex items-center justify-center border-transparent">
+              <div className="text-black font-semibold text-base text-center">
+                11月
+                <div className="text-gray-500 text-xs font-normal">2024</div>
               </div>
             </li>
-            <li className="w-[60px] h-[60px] border rounded-lg flex items-center justify-center border-transparent">
-              <div className="text-black font-semibold text-lg text-center">
-                10月<div className="text-gray-500 text-xs">2024</div>
+            <li className="w-[47px] h-[47px] border rounded-lg flex items-center justify-center border-transparent">
+              <div className="text-black font-semibold text-base text-center">
+                10月
+                <div className="text-gray-500 text-xs font-normal">2024</div>
               </div>
             </li>
-            <li className="w-[60px] h-[60px] border rounded-lg flex items-center justify-center border-transparent">
-              <div className="text-black font-semibold text-lg text-center">
-                9月<div className="text-gray-500 text-xs">2024</div>
+            <li className="w-[47px] h-[47px] border rounded-lg flex items-center justify-center border-transparent">
+              <div className="text-black font-semibold text-base text-center">
+                9月<div className="text-gray-500 text-xs font-normal">2024</div>
               </div>
             </li>
-            <li className="w-[60px] h-[60px] border rounded-lg flex items-center justify-center border-transparent">
-              <div className="text-black font-semibold text-lg text-center">
-                8月<div className="text-gray-500 text-xs">2024</div>
+            <li className="w-[47px] h-[47px] border rounded-lg flex items-center justify-center border-transparent">
+              <div className="text-black font-semibold text-base text-center">
+                8月<div className="text-gray-500 text-xs font-normal">2024</div>
               </div>
             </li>
-            <li className="w-[60px] h-[60px] border rounded-lg flex items-center justify-center border-transparent">
-              <div className="text-black font-semibold text-lg text-center">
-                7月<div className="text-gray-500 text-xs">2024</div>
+            <li className="w-[47px] h-[47px] border rounded-lg flex items-center justify-center border-transparent">
+              <div className="text-black font-semibold text-base text-center">
+                7月<div className="text-gray-500 text-xs font-normal">2024</div>
               </div>
             </li>
-            <li className="w-[60px] h-[60px] border rounded-lg flex items-center justify-center border-transparent">
-              <div className="text-black font-semibold text-lg text-center">
-                6月<div className="text-gray-500 text-xs">2024</div>
+            <li className="w-[47px] h-[47px] border rounded-lg flex items-center justify-center border-transparent">
+              <div className="text-black font-semibold text-base text-center">
+                6月<div className="text-gray-500 text-xs font-normal">2024</div>
               </div>
             </li>
           </ul>
 
-          <Image
-            // className="dark:invert"
-            className="absolute top-0 right-5"
-            src="/rili.png"
-            alt=""
-            width={57}
-            height={57}
-            priority
-          />
+          <div className="absolute w-[77px] top-0 right-0 bg-white">
+            <Image
+              // className="dark:invert"
+
+              src="/rili.png"
+              alt=""
+              width={57}
+              height={57}
+              priority
+            />
+          </div>
         </div>
         <div className="relative">
           <Image
@@ -93,7 +97,7 @@ export default function Home() {
             height={0}
             sizes="100vw"
           />
-          <div className="absolute top-8 left-36 font-semibold text-lg">
+          <div className="absolute top-8 left-36 font-semibold text-base">
             89.50
           </div>
           <div className="absolute top-24 left-[170px] font-extrabold text-3xl">
