@@ -17,52 +17,60 @@ export default function Home() {
       </div>
 
       <div className="flex justify-between items-center p-4 text-sm">
-        <div className="text-gray-900 font-semibold">
-          136****
-          <RandomNumberComponent /> <span className="font-normal">胡*</span>
+        <div>
+          <div className="text-gray-900 font-semibold mb-1">
+            136****
+            <RandomNumberComponent /> <span className="font-normal">胡*</span>
+          </div>
+          <Image src="/rank.png" alt="" width={85} height={23} priority />
         </div>
         <div className="text-gray-900 bg-white px-2 rounded-xl">
           关怀版 &gt;
         </div>
       </div>
       <div className="bg-[#fefefe] rounded-xl py-5">
-        <div className="relative px-5">
+        <div className="relative px-5 overflow-hidden">
           <ul className="flex">
-            <li className="w-[60px] h-[60px]">
-              <div className="text-black font-semibold text-lg">1月</div>
-              <div className="text-gray-500 text-xs">2025</div>
+            <li className="w-[60px] h-[60px] border rounded-lg flex items-center justify-center border-transparent">
+              <div className="text-black font-semibold text-lg text-center">
+                1月<div className="text-gray-500 text-xs">2025</div>
+              </div>
             </li>
-            <li>
-              <div>12月</div>
-              <div>2024</div>
+            <li className="w-[60px] h-[60px] border rounded-lg flex items-center justify-center border-[#2B94FB]">
+              <div className="text-black font-semibold text-lg text-center">
+                12月
+                <div className="text-gray-500 text-xs">2024</div>
+              </div>
             </li>
-            <li>
-              <div>11月</div>
-              <div>2024</div>
+            <li className="w-[60px] h-[60px] border rounded-lg flex items-center justify-center border-transparent">
+              <div className="text-black font-semibold text-lg text-center">
+                11月<div className="text-gray-500 text-xs">2024</div>
+              </div>
             </li>
-            <li>
-              <div>10月</div>
-              <div>2024</div>
+            <li className="w-[60px] h-[60px] border rounded-lg flex items-center justify-center border-transparent">
+              <div className="text-black font-semibold text-lg text-center">
+                10月<div className="text-gray-500 text-xs">2024</div>
+              </div>
             </li>
-            <li>
-              <div>9月</div>
-              <div>2024</div>
+            <li className="w-[60px] h-[60px] border rounded-lg flex items-center justify-center border-transparent">
+              <div className="text-black font-semibold text-lg text-center">
+                9月<div className="text-gray-500 text-xs">2024</div>
+              </div>
             </li>
-            <li>
-              <div>8月</div>
-              <div>2024</div>
+            <li className="w-[60px] h-[60px] border rounded-lg flex items-center justify-center border-transparent">
+              <div className="text-black font-semibold text-lg text-center">
+                8月<div className="text-gray-500 text-xs">2024</div>
+              </div>
             </li>
-            <li>
-              <div>6月</div>
-              <div>2024</div>
+            <li className="w-[60px] h-[60px] border rounded-lg flex items-center justify-center border-transparent">
+              <div className="text-black font-semibold text-lg text-center">
+                7月<div className="text-gray-500 text-xs">2024</div>
+              </div>
             </li>
-            <li>
-              <div>5月</div>
-              <div>2024</div>
-            </li>
-            <li>
-              <div>4月</div>
-              <div>2024</div>
+            <li className="w-[60px] h-[60px] border rounded-lg flex items-center justify-center border-transparent">
+              <div className="text-black font-semibold text-lg text-center">
+                6月<div className="text-gray-500 text-xs">2024</div>
+              </div>
             </li>
           </ul>
 
@@ -76,14 +84,22 @@ export default function Home() {
             priority
           />
         </div>
-        <Image
-          className="w-full"
-          src="/body.png"
-          alt=""
-          width={0}
-          height={0}
-          sizes="100vw"
-        />
+        <div className="relative">
+          <Image
+            className="w-full"
+            src="/body.png"
+            alt=""
+            width={0}
+            height={0}
+            sizes="100vw"
+          />
+          <div className="absolute top-8 left-36 font-semibold text-lg">
+            89.50
+          </div>
+          <div className="absolute top-24 left-[170px] font-extrabold text-3xl">
+            89.50
+          </div>
+        </div>
       </div>
 
       <div className="w-screen max-w-lg h-[70px] fixed bottom-0 left-0">
