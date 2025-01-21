@@ -1,7 +1,67 @@
+"use client";
 import Image from "next/image";
+import React, { useState } from "react";
 import RandomNumberComponent from "./ui/number";
+import RandomPicker from "./ui/cm";
 
 export default function Home() {
+  const numbers: ReadonlyArray<number> = [
+    134, 135, 136, 137, 138, 139, 150, 151, 152, 158, 159, 182, 187,
+  ];
+  const names: ReadonlyArray<string> = [
+    "赵",
+    "钱",
+    "孙",
+    "李",
+    "张",
+    "王",
+    "朱",
+    "郑",
+    "沈",
+    "胡",
+    "万",
+    "汪",
+    "姜",
+    "江",
+    "贺",
+    "郝",
+    "马",
+    "刘",
+    "罗",
+    "余",
+    "施",
+    "谭",
+    "戚",
+    "魏",
+    "周",
+    "武",
+    "林",
+    "杨",
+    "董",
+    "孔",
+    "陶",
+    "孙",
+    "蒋",
+    "邓",
+    "毛",
+    "蔡",
+    "任",
+    "柳",
+    "宋",
+    "曹",
+    "谢",
+    "龚",
+  ];
+
+  const [randomNumber, setRandomNumber] = useState<string | null>(null);
+
+  // 定义获取随机数的函数
+  const getRandomNumber = () => {
+    // 生成0到100之间的随机数，保留两位小数
+    const number = (Math.random() * 100 + 58).toFixed(2);
+    setRandomNumber(number);
+  };
+
   return (
     <div className="bg-[#E0F0FD] h-screen w-screen pt-12 pt-safe-top max-w-lg">
       <Image
@@ -19,8 +79,12 @@ export default function Home() {
       <div className="flex justify-between items-center p-4 text-sm">
         <div>
           <div className="text-gray-900 font-semibold mb-1">
-            136****
-            <RandomNumberComponent /> <span className="font-normal">胡*</span>
+            <RandomPicker values={numbers} init={135} />
+            ****
+            <RandomNumberComponent />{" "}
+            <span className="font-normal">
+              <RandomPicker values={names} init="赵" />*
+            </span>
           </div>
           <Image src="/rank.png" alt="" width={85} height={23} priority />
         </div>
@@ -98,10 +162,13 @@ export default function Home() {
             sizes="100vw"
           />
           <div className="absolute top-8 left-36 font-semibold text-base">
-            89.50
+            {randomNumber ? randomNumber : "89.50"}
           </div>
-          <div className="absolute top-24 left-[170px] font-extrabold text-3xl">
-            89.50
+          <div
+            className="absolute top-24 left-[170px] font-extrabold text-3xl"
+            onClick={getRandomNumber}
+          >
+            {randomNumber ? randomNumber : "89.50"}
           </div>
         </div>
       </div>
