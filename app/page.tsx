@@ -51,6 +51,31 @@ export default function Home() {
     "曹",
     "谢",
     "龚",
+    "韩",
+    "白",
+    "夏",
+    "雷",
+    "田",
+    "单",
+    "左",
+    "卜",
+    "陆",
+    "鲁",
+    "卢",
+    "廖",
+    "金",
+    "裘",
+    "姚",
+    "黄",
+    "倪",
+    "宣",
+    "易",
+    "伊",
+    "尹",
+    "冷",
+    "何",
+    "古",
+    "郭",
   ];
 
   const [randomNumber, setRandomNumber] = useState<string | null>(null);
@@ -97,6 +122,11 @@ export default function Home() {
           <ul className="flex w-[450px]">
             <li className="w-[47px] h-[47px] border rounded-lg flex items-center justify-center border-transparent">
               <div className="text-black font-semibold text-base text-center">
+                2月<div className="text-gray-500 text-xs font-normal">2025</div>
+              </div>
+            </li>
+            <li className="w-[47px] h-[47px] border rounded-lg flex items-center justify-center border-transparent">
+              <div className="text-black font-semibold text-base text-center">
                 1月<div className="text-gray-500 text-xs font-normal">2025</div>
               </div>
             </li>
@@ -133,17 +163,11 @@ export default function Home() {
                 7月<div className="text-gray-500 text-xs font-normal">2024</div>
               </div>
             </li>
-            <li className="w-[47px] h-[47px] border rounded-lg flex items-center justify-center border-transparent">
-              <div className="text-black font-semibold text-base text-center">
-                6月<div className="text-gray-500 text-xs font-normal">2024</div>
-              </div>
-            </li>
           </ul>
 
           <div className="absolute w-[77px] top-0 right-0 bg-white">
             <Image
               // className="dark:invert"
-
               src="/rili.png"
               alt=""
               width={57}
@@ -152,7 +176,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="relative">
+        <div className="relative text-white">
           <Image
             className="w-full"
             src="/body.png"
