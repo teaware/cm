@@ -185,8 +185,8 @@ export default function Home() {
             height={0}
             sizes="100vw"
           />
-          <div className="absolute top-8 left-8 flex items-baseline">
-            <span className="text-xs tracking-wide text-[#FAFFFE]">
+          <div className="absolute top-8 left-8">
+            <span className="text-xs tracking-wide text-[#D9F7F7]">
               您本月共消费(元)：
             </span>
             <span className="font-semibold text-base">
@@ -195,10 +195,10 @@ export default function Home() {
           </div>
           <div className="absolute top-16 left-40" onClick={getRandomNumber}>
             <div>
-              <span className="text-xs tracking-wide text-[#FAFFFE]">
+              <span className="text-xs tracking-wide text-[#D9F7F7]">
                 实际应付(元)
               </span>
-              <span className="text-[11px] text-[#FAFFFE] px-2 border border-solid border-gray-200 rounded-xl ml-2">
+              <span className="text-[11px] text-[#D9F7F7] px-2 border border-solid border-[#D9F7F7] rounded-xl ml-2">
                 换套餐&gt;
               </span>
             </div>
