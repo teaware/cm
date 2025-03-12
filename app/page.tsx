@@ -83,12 +83,12 @@ export default function Home() {
   // 定义获取随机数的函数
   const getRandomNumber = () => {
     // 生成0到100之间的随机数，保留两位小数
-    const number = (Math.random() * 100 + 58).toFixed(2);
+    const number = (Math.random() * 100 + 58).toFixed(1);
     setRandomNumber(number);
   };
 
   return (
-    <div className="bg-[#E0F0FD] h-screen w-screen pt-12 pt-safe-top max-w-lg">
+    <div className="bg-[#E0F0FD] h-screen w-screen pt-12 max-w-md">
       <Image
         className="w-full"
         src="/banner.png"
@@ -97,7 +97,7 @@ export default function Home() {
         height={0}
         sizes="100vw"
       />
-      <div className="w-screen h-[40px] max-w-lg fixed top-0 pt-safe-top left-0">
+      <div className="w-screen h-[40px] max-w-md fixed top-0 pt-safe-top left-0">
         <Image className="" src="/header.png" alt="" sizes="100vw" fill />
       </div>
 
@@ -185,19 +185,31 @@ export default function Home() {
             height={0}
             sizes="100vw"
           />
-          <div className="absolute top-8 left-36 font-semibold text-base">
-            {randomNumber ? randomNumber : "89.50"}
+          <div className="absolute top-8 left-8 flex items-baseline">
+            <span className="text-xs tracking-wide text-[#FAFFFE]">
+              您本月共消费(元)：
+            </span>
+            <span className="font-semibold text-base">
+              {randomNumber ? randomNumber : "89.5"}0
+            </span>
           </div>
-          <div
-            className="absolute top-24 left-[170px] font-extrabold text-3xl"
-            onClick={getRandomNumber}
-          >
-            {randomNumber ? randomNumber : "89.50"}
+          <div className="absolute top-16 left-40" onClick={getRandomNumber}>
+            <div>
+              <span className="text-xs tracking-wide text-[#FAFFFE]">
+                实际应付(元)
+              </span>
+              <span className="text-[11px] text-[#FAFFFE] px-2 border border-solid border-gray-200 rounded-xl ml-2">
+                换套餐&gt;
+              </span>
+            </div>
+            <span className="font-extrabold text-3xl">
+              {randomNumber ? randomNumber : "89.5"}0
+            </span>
           </div>
         </div>
       </div>
 
-      <div className="w-screen max-w-lg h-[70px] fixed bottom-0 left-0">
+      <div className="w-screen max-w-md h-[70px] fixed bottom-0 left-0">
         <Image src="/footer.png" alt="" sizes="100vw" fill />
       </div>
     </div>
