@@ -83,7 +83,7 @@ export default function Home() {
   // 定义获取随机数的函数
   const getRandomNumber = () => {
     // 生成0到100之间的随机数，保留两位小数
-    const number = (Math.random() * 100 + 58).toFixed(1);
+    const number = (Math.random() * 100 + 58).toFixed(2);
     setRandomNumber(number);
   };
 
@@ -190,7 +190,7 @@ export default function Home() {
               您本月共消费(元)：
             </span>
             <span className="font-semibold text-base">
-              {randomNumber ? randomNumber : "89.5"}0
+              {randomNumber ? randomNumber : "89.50"}
             </span>
           </div>
           <div className="absolute top-16 left-40" onClick={getRandomNumber}>
@@ -203,9 +203,12 @@ export default function Home() {
               </span>
             </div>
             <span className="font-extrabold text-3xl">
-              {randomNumber ? randomNumber : "89.5"}0
+              {randomNumber ? randomNumber : "89.50"}
             </span>
           </div>
+          <span className="absolute top-[130px] left-[260px] text-xs tracking-wide text-[#D9F7F7]">
+            账单阅读指南 &gt;
+          </span>
         </div>
       </div>
 
