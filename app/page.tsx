@@ -97,7 +97,7 @@ export default function Home() {
         height={0}
         sizes="100vw"
       />
-      <div className="w-screen h-[40px] max-w-md fixed top-0 pt-safe-top left-0">
+      <div className="w-screen h-[40px] max-w-md fixed top-0 pt-safe-top bg-[#E0F0FD] left-0">
         <Image className="" src="/header.png" alt="" sizes="100vw" fill />
       </div>
 
