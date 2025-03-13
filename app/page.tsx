@@ -111,7 +111,7 @@ export default function Home() {
               <RandomPicker values={names} init="赵" />*
             </span>
           </div>
-          <Image src="/rank.png" alt="" width={85} height={23} priority />
+          <Image src="/rank.png" alt="" width={74} height={18} priority />
         </div>
         <div className="text-gray-900 bg-white px-2 rounded-xl">
           关怀版 &gt;
