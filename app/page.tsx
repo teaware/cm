@@ -111,7 +111,7 @@ export default function Home() {
               <RandomPicker values={names} init="赵" />*
             </span>
           </div>
-          <Image src="/rank.png" alt="" width={74} height={18} priority />
+          <Image src="/rank.png" alt="" width={64} height={16} priority />
         </div>
         <div className="text-gray-900 bg-white px-2 rounded-xl">
           关怀版 &gt;
@@ -185,9 +185,9 @@ export default function Home() {
             height={0}
             sizes="100vw"
           />
-          <div className="absolute top-8 left-8">
+          <div className="absolute top-8 left-8 flex items-center">
             <span className="text-xs tracking-wide text-[#D9F7F7]">
-              您本月共消费(元)：
+              您本月共消费(元):
             </span>
             <span className="font-semibold text-base">
               {randomNumber ? randomNumber : "89.50"}
