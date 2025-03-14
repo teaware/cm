@@ -185,13 +185,13 @@ export default function Home() {
             height={0}
             sizes="100vw"
           />
-          <div className="absolute top-8 left-8 flex items-center">
-            <span className="text-xs tracking-wide text-[#D9F7F7]">
+          <div className="absolute top-8 left-8 flex items-center justify-center">
+            <div className="text-xs tracking-wide text-[#D9F7F7]">
               您本月共消费(元):
-            </span>
-            <span className="font-semibold text-base">
+            </div>
+            <div className="font-semibold text-base ml-1">
               {randomNumber ? randomNumber : "89.50"}
-            </span>
+            </div>
           </div>
           <div className="absolute top-16 left-40" onClick={getRandomNumber}>
             <div>
