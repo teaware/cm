@@ -122,6 +122,11 @@ export default function Home() {
           <ul className="flex w-[450px]">
             <li className="w-[47px] h-[47px] border rounded-lg flex items-center justify-center border-transparent">
               <div className="text-black font-semibold text-base text-center">
+                4月<div className="text-gray-500 text-xs font-normal">2025</div>
+              </div>
+            </li>
+            <li className="w-[47px] h-[47px] border rounded-lg flex items-center justify-center border-transparent">
+              <div className="text-black font-semibold text-base text-center">
                 3月<div className="text-gray-500 text-xs font-normal">2025</div>
               </div>
             </li>
