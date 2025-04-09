@@ -125,12 +125,12 @@ export default function Home() {
                 4月<div className="text-gray-500 text-xs font-normal">2025</div>
               </div>
             </li>
-            <li className="w-[47px] h-[47px] border rounded-lg flex items-center justify-center border-transparent">
+            <li className="w-[47px] h-[47px] border rounded-lg flex items-center justify-center border-[#2B94FB]">
               <div className="text-black font-semibold text-base text-center">
                 3月<div className="text-gray-500 text-xs font-normal">2025</div>
               </div>
             </li>
-            <li className="w-[47px] h-[47px] border rounded-lg flex items-center justify-center border-[#2B94FB]">
+            <li className="w-[47px] h-[47px] border rounded-lg flex items-center justify-center border-transparent">
               <div className="text-black font-semibold text-base text-center">
                 2月<div className="text-gray-500 text-xs font-normal">2025</div>
               </div>
